@@ -1,4 +1,5 @@
 :root {
+  --bg-top: #12123a;
   --bg: #0d0d2b;
   --bg-soft: #1d1d51;
   --surface: #171742;
@@ -20,7 +21,7 @@ body {
 }
 
 html {
-  background-color: var(--bg);
+  background-color: var(--bg-top);
 }
 
 body {
