@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1">
+
+    <meta
+        name="theme-color"
+        content="#12123a">
+
+    <title>
+        Topoi Quantum | Topoi Developer Hub
+    </title>
+
+    <meta
+        name="description"
+        content="Topoi Quantum is an open-source .NET 10 quantum computing toolkit for circuit building, state-vector simulation and OpenQASM.">
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="../assets/icons/favicon.svg">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=KoHo:wght@500;600;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/main.css">
+
+</head>
+
+
+<body class="dark-theme">
+
+
+<header class="app-header">
+
+    <div class="container nav-wrap">
+
+        <a
+            class="brand"
+            href="/"
+            aria-label="Topoi Developer Hub">
+
+            <img
+                src="../assets/img/svg-icons/topoi-logo.svg"
+                alt="Topoi"
+                class="brand-logo">
+
+        </a>
+
+
+        <nav aria-label="Primary">
+
+            <a href="/#projects">
+                Projects
+            </a>
+
+            <a
+                href="/quantum/"
+                aria-current="page">
+                Quantum
+            </a>
+
+            <a
+                href="https://github.com/topoi-io/topoi-quantum"
+                target="_blank"
+                rel="noopener noreferrer">
+                GitHub
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+    <!-- HERO -->
+
+    <section class="section-gap hero">
+
+        <div class="container">
+
+            <p class="pre-title">
+                QUANTUM COMPUTING
+            </p>
+
+            <h1>
+                Topoi Quantum
+            </h1>
+
+            <p class="quantum-lead">
+                Quantum computing for .NET.
+            </p>
+
+            <p class="body2 hero-copy">
+
+                Build quantum circuits, run local state-vector
+                simulations, execute OpenQASM and explore quantum
+                algorithms using C# and .NET 10.
+
+            </p>
+
+
+            <div class="btn-row">
+
+                <a
+                    class="btn btn-primary"
+                    href="https://github.com/topoi-io/topoi-quantum"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    View on GitHub
+
+                </a>
+
+                <a
+                    class="btn btn-secondary"
+                    href="#quick-start">
+
+                    Get Started
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+
+    <section class="quantum-features">
+
+        <div class="container">
+
+            <p class="pre-title">
+                TOOLKIT
+            </p>
+
+            <h2>
+                Built for .NET developers.
+            </h2>
+
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+
+                    <h3>
+                        Circuit Builder
+                    </h3>
+
+                    <p>
+                        Build reusable quantum circuits through
+                        a fluent C# API.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        State-vector Simulation
+                    </h3>
+
+                    <p>
+                        Run dense pure-state simulations locally
+                        without requiring cloud hardware.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        OpenQASM
+                    </h3>
+
+                    <p>
+                        Parse, execute and export practical
+                        OpenQASM 3 programs.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Sampling
+                    </h3>
+
+                    <p>
+                        Sample quantum measurements and inspect
+                        observed outcomes.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Observables
+                    </h3>
+
+                    <p>
+                        Estimate Pauli expectation values from
+                        simulated quantum states.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Developer Tools
+                    </h3>
+
+                    <p>
+                        CLI tooling, circuit drawing, automated
+                        tests and BenchmarkDotNet benchmarks.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUICK START -->
+
+    <section
+        class="quick-start-section"
+        id="quick-start">
+
+        <div class="container">
+
+            <p class="pre-title">
+                QUICK START
+            </p>
+
+            <h2>
+                Your first circuit.
+            </h2>
+
+            <p class="body2">
+                Create a Bell-state circuit using the
+                Topoi Quantum C# API.
+            </p>
+
+
+            <div class="code-panel">
+
+<pre><code>using Topoi.Quantum;
+using Topoi.Quantum.Primitives;
+
+QuantumCircuit bell = QuantumToolkit
+    .Circuit(2)
+    .H(0)
+    .CX(0, 1)
+    .Build();</code></pre>
+
+            </div>
+
+            <p class="body2">
+
+                Full installation instructions, examples,
+                package information and API details are available
+                in the project repository.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- OPEN SOURCE -->
+
+    <section class="open-source-section">
+
+        <div class="container open-source-card">
+
+            <div>
+
+                <p class="pre-title">
+                    OPEN SOURCE
+                </p>
+
+                <h2>
+                    Build with us.
+                </h2>
+
+                <p class="body2">
+
+                    Topoi Quantum is released under the MIT licence.
+                    Explore the source, report issues and contribute
+                    through GitHub.
+
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <a
+                    class="btn btn-primary"
+                    href="https://github.com/topoi-io/topoi-quantum"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    View Source
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer class="app-footer">
+
+    <div class="container footer-row">
+
+        <div>
+
+            <h4>
+                Topoi
+            </h4>
+
+            <p class="body2">
+                Developer infrastructure for the Topoi ecosystem.
+            </p>
+
+            <div class="copyright">
+                &copy; 2026 Topoi, Inc. All rights reserved.
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>

@@ -1,57 +1,334 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#12123a">
-  <title>Topoi Developer Hub</title>
-  <meta name="description" content="Topoi Developer Hub">
-  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@500;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#12123a">
+
+    <title>Topoi Developer Hub</title>
+
+    <meta
+        name="description"
+        content="Open-source developer tools, infrastructure and research projects from Topoi.">
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="assets/icons/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=KoHo:wght@500;600;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body class="dark-theme">
-  <header class="app-header navbar-purple">
+
+<header class="app-header">
     <div class="container nav-wrap">
-      <a class="brand" href="/" aria-label="Topoi home">
-        <img src="assets/img/svg-icons/topoi-logo.svg" alt="Topoi" class="brand-logo">
-      </a>
-      <nav aria-label="Primary">
-        <a href="#" aria-current="page">Developer Hub</a>
-      </nav>
-    </div>
-  </header>
 
-  <main>
+        <a class="brand" href="/" aria-label="Topoi home">
+            <img
+                src="assets/img/svg-icons/topoi-logo.svg"
+                alt="Topoi"
+                class="brand-logo">
+        </a>
+
+        <nav aria-label="Primary">
+            <a href="#projects">Projects</a>
+            <a href="/quantum/">Quantum</a>
+            <a
+                href="https://github.com/topoi-io"
+                target="_blank"
+                rel="noopener noreferrer">
+                GitHub
+            </a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- HERO -->
     <section class="section-gap hero">
-      <div class="container">
-        <p class="pre-title">BUILD WITH TOPOI</p>
-        <h1>Developer Hub</h1>
-        <p class="body2">API docs, SDKs, examples, and integration guides are on the way.</p>
-        <a class="btn btn-primary" href="https://topoi.io" target="_blank" rel="noopener noreferrer">Visit topoi.io</a>
-      </div>
-    </section>
+        <div class="container">
 
-    <section class="section-gap-sm">
-      <div class="container">
-        <div class="placeholder-card" role="status" aria-live="polite">
-          <h2>Coming Soon</h2>
-          <p class="body2">We're preparing developer resources for an upcoming release.</p>
+            <p class="pre-title">
+                BUILD WITH TOPOI
+            </p>
+
+            <h1>
+                Open-source infrastructure<br>
+                for developers.
+            </h1>
+
+            <p class="body2 hero-copy">
+                Explore Topoi's open-source tools for quantum computing,
+                virtual machines and distributed systems.
+            </p>
+
+            <div class="btn-row">
+
+                <a
+                    class="btn btn-primary"
+                    href="#projects">
+                    Explore Projects
+                </a>
+
+                <a
+                    class="btn btn-secondary"
+                    href="https://github.com/topoi-io"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+            </div>
+
         </div>
-      </div>
     </section>
-  </main>
 
-  <footer class="app-footer">
+
+    <!-- PROJECTS -->
+    <section
+        class="section-gap-sm projects-section"
+        id="projects">
+
+        <div class="container">
+
+            <p class="pre-title">
+                OPEN SOURCE
+            </p>
+
+            <h2>
+                Projects
+            </h2>
+
+            <p class="body2 section-intro">
+                Developer tools and experimental computing
+                projects from Topoi.
+            </p>
+
+
+            <div class="project-grid">
+
+                <!-- QUANTUM -->
+                <article class="project-card featured-project">
+
+                    <div class="project-card-header">
+
+                        <span class="project-category">
+                            Quantum Computing
+                        </span>
+
+                        <span class="project-status">
+                            Open Source
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Topoi Quantum
+                    </h3>
+
+                    <p>
+                        A .NET 10 quantum-computing toolkit for building
+                        circuits, running state-vector simulations,
+                        working with OpenQASM and exploring quantum
+                        algorithms locally.
+                    </p>
+
+
+                    <div class="tag-row">
+                        <span class="tag">C#</span>
+                        <span class="tag">.NET 10</span>
+                        <span class="tag">OpenQASM</span>
+                        <span class="tag">MIT</span>
+                    </div>
+
+
+                    <div class="project-actions">
+
+                        <a
+                            class="btn btn-primary"
+                            href="/quantum/">
+                            Explore Quantum
+                        </a>
+
+                        <a
+                            class="text-link"
+                            href="https://github.com/topoi-io/topoi-quantum"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            View on GitHub →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TVM -->
+                <article class="project-card">
+
+                    <div class="project-card-header">
+
+                        <span class="project-category">
+                            Virtual Machine
+                        </span>
+
+                        <span class="project-status status-planned">
+                            Planned
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Topoi TVM
+                    </h3>
+
+                    <p>
+                        An EVM-compatible virtual machine and execution
+                        engine for the Topoi ecosystem.
+                    </p>
+
+
+                    <div class="tag-row">
+                        <span class="tag">C#</span>
+                        <span class="tag">.NET</span>
+                        <span class="tag">EVM</span>
+                    </div>
+
+
+                    <div class="project-actions">
+                        <span class="coming-soon">
+                            Open source release coming later
+                        </span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- RESOURCES -->
+    <section class="resources-section">
+
+        <div class="container">
+
+            <p class="pre-title">
+                DEVELOPER RESOURCES
+            </p>
+
+            <h2>
+                Build, explore and contribute.
+            </h2>
+
+
+            <div class="resource-grid">
+
+                <a class="resource-card" href="/quantum/">
+
+                    <h3>
+                        Documentation
+                    </h3>
+
+                    <p>
+                        Learn how Topoi projects work and
+                        start building with them.
+                    </p>
+
+                    <span>
+                        Explore docs →
+                    </span>
+
+                </a>
+
+
+                <a
+                    class="resource-card"
+                    href="https://github.com/topoi-io"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <h3>
+                        Source Code
+                    </h3>
+
+                    <p>
+                        Explore Topoi's public repositories
+                        and development activity.
+                    </p>
+
+                    <span>
+                        View GitHub →
+                    </span>
+
+                </a>
+
+
+                <a
+                    class="resource-card"
+                    href="https://github.com/topoi-io/topoi-quantum"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <h3>
+                        Contributing
+                    </h3>
+
+                    <p>
+                        Report issues, propose features and
+                        contribute to Topoi projects.
+                    </p>
+
+                    <span>
+                        Get involved →
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="app-footer">
+
     <div class="container footer-row">
-      <div>
-        <h4>Topoi</h4>
-        <p class="body2">Developer infrastructure for the Topoi ecosystem.</p>
-        <div class="copyright">&copy; 2026 Topoi, Inc. All rights reserved.</div>
-      </div>
+
+        <div>
+
+            <h4>
+                Topoi
+            </h4>
+
+            <p class="body2">
+                Developer infrastructure for the Topoi ecosystem.
+            </p>
+
+            <div class="copyright">
+                &copy; 2026 Topoi, Inc. All rights reserved.
+            </div>
+
+        </div>
+
     </div>
-  </footer>
+
+</footer>
+
 </body>
 </html>
