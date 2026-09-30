@@ -383,6 +383,14 @@ nav {
     align-items: center;
     flex-wrap: wrap;
 
+    /*
+       Keep the footer area the same height across project cards.
+       Quantum has a full-size button here while Wallets, EVM and
+       TVM currently contain text only. This keeps the tag rows
+       aligned across each row of cards.
+    */
+    min-height: 3.4rem;
+
     gap: 1rem;
 }
 
