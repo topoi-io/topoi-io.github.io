@@ -130,6 +130,12 @@ nav a {
   padding: 0.55rem 0.85rem;
   border-radius: 0.7rem 0.7rem 0 0;
   background: rgba(85, 222, 172, 0.1);
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  background: rgba(85, 222, 172, 0.2);
+  color: var(--accent);
 }
 
 .hero .btn {
