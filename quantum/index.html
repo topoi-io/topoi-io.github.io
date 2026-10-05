@@ -269,8 +269,53 @@
             </p>
 
             <h2>
-                Your first circuit.
+                Get started with Topoi Quantum.
             </h2>
+
+            <h3>
+                1. Install the SDK
+            </h3>
+
+            <p class="body2">
+                Topoi Quantum requires the .NET 10 SDK.
+                Add the core package to your .NET project:
+            </p>
+
+
+            <div class="code-panel">
+
+<pre><code>dotnet add package Topoi.Quantum --version 0.1.0</code></pre>
+
+            </div>
+
+            <p class="body2">
+                If your application needs OpenQASM 3 parsing,
+                execution or export, add the OpenQASM package:
+            </p>
+
+
+            <div class="code-panel">
+
+<pre><code>dotnet add package Topoi.Quantum.OpenQasm --version 0.1.0</code></pre>
+
+            </div>
+
+            <p class="body2">
+                For command-line and interactive use, install
+                the <code>tq</code> .NET tool globally:
+            </p>
+
+
+            <div class="code-panel">
+
+<pre><code>dotnet tool install --global Topoi.Quantum.Tool --version 0.1.0
+tq --help</code></pre>
+
+            </div>
+
+            <h3>
+                2. Create your first circuit
+            </h3>
 
             <p class="body2">
                 Create a Bell-state circuit using the
@@ -293,9 +338,8 @@ QuantumCircuit bell = QuantumToolkit
 
             <p class="body2">
 
-                Full installation instructions, examples,
-                package information and API details are available
-                in the project repository.
+                More examples, package details and API information
+                are available in the project repository.
 
             </p>
 
